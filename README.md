@@ -95,14 +95,12 @@ Ensure you have Python installed. You can download it from [python.org](https://
 
 7. **Web crawling example1**:
    
-   - Run `5.2_web_crawler.py` to use a custom web crawler implementation.
    ```sh
    python 5.2_web_crawler.py
    ```
    
 8. **Web crawling example2**:
    
-   - Run `5.3_web_parsing.py` for general web parsing tasks.
    ```sh
    python 5.3_web_parsing.py
    ```
