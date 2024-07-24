@@ -1,0 +1,9 @@
+import requests
+from bs4 import BeautifulSoup
+
+sudo playwright install chromium
+sudo playwright install firefox
+
+import yaml
+from langchain_openai import ChatOpenAI
+from langchain.chains import create_extraction_chain
