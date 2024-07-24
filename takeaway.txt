@@ -1,0 +1,39 @@
+Basic Steps of Web Scraping:
+1. Crawling
+- Manual URL Retrieval: You can manually visit the target webpage through a browser and copy the URL.
+- Scripted URL Retrieval: You can write a script to request the initial page and parse the subsequent URLs from the response.
+
+2. Parsing
+Requesting Web Page Content:
+- Simple Requests: Use Python's requests library to send an HTTP request and receive a response.
+- Complex Requests: Use Playwright to handle webpages that require asynchronous loading, ensuring you get the complete HTML content. Playwright can also simulate user actions such as typing in input fields and clicking buttons.
+
+Parsing HTML Content:
+- BeautifulSoup: Use BeautifulSoup to parse HTML. No preprocessing is needed; just create a soup object using BeautifulSoup().
+- AI Parsing: Use tools like Langchain's create_extraction_chain to parse HTML. It's best to preprocess the HTML by removing style and script tags as well as unnecessary empty lines and spaces.
+
+3. Extracting Information
+- BeautifulSoup: You need to understand the HTML structure and use CSS selectors to extract the desired information.
+- AI Extraction: Use natural language to describe a schema, and the AI will extract information based on that description.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+网络爬虫的基础三步骤:
+1. Crawling (爬取)
+手动获取URL: 你可以通过浏览器手动访问目标网页，然后复制URL。
+脚本获取URL: 可以编写脚本，通过请求初始页面并解析出后续页面的URL。
+
+
+2. Parsing (解析)
+请求网页内容:
+简单请求: 使用Python的requests库发送HTTP请求并获取响应。
+复杂请求: 使用Playwright处理需要异步加载的网页，确保获取完整的HTML内容。Playwright还可以模拟用户操作，如输入和点击。
+
+解析HTML内容:
+BeautifulSoup: 用BeautifulSoup解析HTML，不需要预处理，只需使用BeautifulSoup()创建soup对象。
+AI解析: 使用如Langchain的create_extraction_chain解析HTML。最好预处理HTML，如删除style和script标签以及无效的空行和空格。
+
+
+3. Extracting Information (提取信息)
+BeautifulSoup: 需要理解HTML结构，使用CSS选择器提取所需信息。
+AI提取: 使用自然语言描述schema，AI根据描述提取信息。
